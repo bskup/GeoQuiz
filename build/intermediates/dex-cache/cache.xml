@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\School\Android\GeoQuiz\app\build\intermediates\transforms\instantRunSlicer\debug\jars\1\5\main_slice.jar"
+        jumboMode="true"
+        revision="24.0.0 rc1"
+        sha1="a28e1054b88d996b353f0dbd18400593cd81d266">
+        <dex dex="C:\School\Android\GeoQuiz\app\build\intermediates\transforms\dex\debug\folders\1000\5\main_slice_5dbe00fb153ce20e6c12b09fbcf6ea4e3439ecbc\classes.dex" />
+    </item>
+    <item
+        jar="C:\School\Android\GeoQuiz\app\build\intermediates\transforms\instantRunSlicer\debug\jars\1\5\main_sliceb.jar"
+        jumboMode="true"
+        revision="24.0.0 rc1"
+        sha1="878f2e16b00e5718e6fcbfbbae99f387bf432ac4">
+        <dex dex="C:\School\Android\GeoQuiz\app\build\intermediates\transforms\dex\debug\folders\1000\5\main_sliceb_23428deab725884e2a4bfda3a82a7ac42df4e033\classes.dex" />
+    </item>
+    <item
+        jar="C:\School\Android\GeoQuiz\app\build\intermediates\transforms\instantRunSlicer\debug\jars\1\1a\dependencies.jar"
+        jumboMode="true"
+        revision="24.0.0 rc1"
+        sha1="6a2a6b85d567187570b01604ad750a3a552256dc">
+        <dex dex="C:\School\Android\GeoQuiz\app\build\intermediates\transforms\dex\debug\folders\1000\1a\dependencies_c2ee470a66e259335e25177006c7210f62d0bef6\classes.dex" />
+    </item>
+
+</items>
