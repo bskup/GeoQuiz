@@ -1,6 +1,8 @@
 # GeoQuiz Readme
+
 # Test file commit
 
+3/22/16
 -Initial commit at 1pm, deleted repo due to weird username settings
 leftover from a previous installation of GitHub I never used.
 
@@ -8,4 +10,4 @@ leftover from a previous installation of GitHub I never used.
 
 -Created readme to test stuff
 
-GeoQuiz
+-More testing
