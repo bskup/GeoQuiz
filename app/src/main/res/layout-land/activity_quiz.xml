@@ -27,8 +27,6 @@
             android:text="@string/false_button" />
     </LinearLayout>
 
-        <!-- Took these buttons out of their linearlayout to let each
-        one float in the corner -->
         <ImageButton
             android:id="@+id/back_button"
             android:layout_width="wrap_content"
@@ -36,6 +34,14 @@
             android:layout_gravity="bottom|start"
             android:src="@drawable/arrow_left"
             android:contentDescription="@string/back_button"/>
+
+        <Button
+            android:id="@+id/cheat_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cheat_button"
+            android:layout_gravity="bottom|center"/>
+
         <ImageButton
             android:id="@+id/next_button"
             android:layout_width="wrap_content"
