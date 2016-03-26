@@ -4,16 +4,24 @@ import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
 public class CheatActivity extends AppCompatActivity {
 
+    // Testing Ch5c1
+    private static final String TAG = "CheatActivity";
+    private static final String KEY_IS_CHEATER = "cheater";
+
     private static final String EXTRA_ANSWER_IS_TRUE =
             "com.bignerdranch.android.geoquiz.answer_is_true";
     private static final String EXTRA_ANSWER_SHOWN =
             "com.bignerdranch.android.geoquiz.answer_shown";
+
+    // Testing Ch5c1
+    private boolean mUserIsCheater;
 
     private boolean mAnswerIsTrue;
 
@@ -48,14 +56,34 @@ public class CheatActivity extends AppCompatActivity {
                     mAnswerTextView.setText(R.string.false_button);
                 }
                 setAnswerShownResult(true);
+
+                // Testing Ch5c1
+                mUserIsCheater = true;
             }
         });
+
+        // Testing Ch5c1
+        // If there's value saved, reassign from saved value
+        if (savedInstanceState != null) {
+            mUserIsCheater = savedInstanceState.getBoolean(KEY_IS_CHEATER);
+            // Method that passes data across activities
+            setAnswerShownResult(mUserIsCheater);
+        }
+
     }
 
     private void setAnswerShownResult(boolean isAnswerShown) {
         Intent data = new Intent();
         data.putExtra(EXTRA_ANSWER_SHOWN, isAnswerShown);
         setResult(RESULT_OK, data);
+    }
+
+    // Override to save across rotation testing ch5c1
+    @Override
+    public void onSaveInstanceState(Bundle savedInstanceState) {
+        super.onSaveInstanceState(savedInstanceState);
+        Log.i(TAG, "onSaveInstanceState");
+        savedInstanceState.putBoolean(KEY_IS_CHEATER, mUserIsCheater);
     }
 
 }

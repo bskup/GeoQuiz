@@ -130,7 +130,7 @@ public class QuizActivity extends AppCompatActivity {
 
         // If there's a value saved, make it the current index
         if (savedInstanceState != null) {
-            mCurrentIndex = savedInstanceState.getInt(KEY_INDEX, 0);
+            mCurrentIndex = savedInstanceState.getInt(KEY_INDEX);
         }
 
         updateQuestion();
