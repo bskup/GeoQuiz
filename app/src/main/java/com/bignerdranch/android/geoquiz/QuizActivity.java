@@ -2,6 +2,7 @@ package com.bignerdranch.android.geoquiz;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -23,6 +24,9 @@ public class QuizActivity extends AppCompatActivity {
     private ImageButton mNextButton;
     private ImageButton mBackButton;
     private TextView mQuestionTextView;
+
+    // Ch6c1
+    private TextView mApiTextView;
 
     private Question[] mQuestionBank = new Question[] {
             new Question(R.string.question_oceans, true),
@@ -127,6 +131,10 @@ public class QuizActivity extends AppCompatActivity {
                 startActivityForResult(i, REQUEST_CODE_CHEAT);
             }
         });
+
+        // Testing Ch6c1
+        mApiTextView = (TextView) findViewById(R.id.api_text_view);
+        mApiTextView.setText("API level " + Build.VERSION.SDK_INT);
 
         // If there's a value saved, make it the current index
         if (savedInstanceState != null) {
